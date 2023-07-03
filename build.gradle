@@ -1,0 +1,25 @@
+plugins {
+	id 'java'
+	id("io.freefair.lombok") version "8.1.0"
+}
+
+group = 'com.kiwigrid.jira'
+version = '1.0-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation platform('com.fasterxml.jackson:jackson-bom:2.15.2')
+	implementation platform('io.github.openfeign:feign-bom:12.3')
+
+	implementation 'ch.qos.logback:logback-classic:1.4.8'
+	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+	implementation 'io.github.openfeign:feign-core'
+	implementation 'io.github.openfeign:feign-jackson'
+}
+
+test {
+	useJUnitPlatform()
+}
