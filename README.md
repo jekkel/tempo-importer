@@ -25,6 +25,6 @@ Add single argument pointing to an XML hamster export.
 
 ## Development Ideas
 
-[ ] Synchronize with Tempo instead of importing
-[ ] Retrieve activities from Hamster using DBus interface
-[ ] Build a runnable application
+- [ ] Synchronize with Tempo instead of importing
+- [ ] Retrieve activities from Hamster using DBus interface
+- [ ] Build a runnable application
